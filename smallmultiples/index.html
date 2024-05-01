@@ -127,7 +127,7 @@
 	var legendX = 0.84, legendY = 0.5
 
 	// id attribute and the name attribute to be used in the tooltip
-	var idAttribute = 'FIPS', nameAttribute = 'County';
+	var idAttribute = 'TRACTCE', nameAttribute = 'Tract';
 
 	// Find the abbreviations of color names from https://colorbrewer2.org/
 	var colors =  colorbrewer.PuRd;
@@ -139,10 +139,10 @@
 	// att1format: enter the d3.format string to display the variables in the format you like
 	// Check this link on how to specify the desired format:
 	// https://observablehq.com/@d3/d3-format
-	var att1 = 'lakidshalf', att1alias = 'Percent children', att1format = '.0f',
-	att2 = 'lawhitehalf', att2alias =  'Percent white population', att2format = '.0f',
-	att3 = 'lablackhalf', att3alias = 'Percent black population', att3format = '.0f',
-	att4 = 'lahunhalf', att4alias = 'Percent housing units', att4format = '.0f';
+	var att1 = 'FoodAccessResearchAtlasData2019_p_lakidshalf', att1alias = 'Percent children', att1format = '.0f',
+	att2 = 'FoodAccessResearchAtlasData2019_p_lawhitehalf', att2alias =  'Percent white population', att2format = '.0f',
+	att3 = 'FoodAccessResearchAtlasData2019_p_lablackhalf', att3alias = 'Percent black population', att3format = '.0f',
+	att4 = 'FoodAccessResearchAtlasData2019_p_lahunvhalf', att4alias = 'Percent housing units', att4format = '.0f';
 
   // enter below all variables that should be recalculated. The order of attributes should match with
 	// the list of multiply and divide by values
@@ -154,7 +154,7 @@
 	// Enter the attribute name that you want to normalize (divide by).
 	// If you want to only multiply an attribute but not divide by another attribute
 	// then simply put null as the attribute name in the same order of the attribute.
-	 var divideBy = ['POP2010','POP2010','POP2010', 'OHU2010'];
+	 var divideBy = ['FoodAccessResearchAtlasData2019_p_POP2010','FoodAccessResearchAtlasData2019_p_POP2010','FoodAccessResearchAtlasData2019_p_POP2010', 'FoodAccessResearchAtlasData2019_p_OHU2010'];
 	// if your variables are not raw counts and they are already normalized, comment out above, and
 	//uncomment below:
 	// var attributesToBeNormalized = [];
