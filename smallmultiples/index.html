@@ -53,12 +53,12 @@
 	<div class="container">
 		<div class="content">
 			<div class="row">
-					<h1>Youth Demographics for Iowa 2023</h1>
+					<h1>Food Research for Peoria, Illinois | Low Access Data 2010</h1>
 			</div>
 			<hr />
 			<div class="row">
 				<div class="col-sm-4">
-					<p>Data from <a href="https://www.countyhealthrankings.org/health-data/iowa/data-and-resources">Iowa County Health Rankings 2023</a>, maps by Ryan Larson & Caglar Koylu.</p>
+					<p>Data from <a href="https://www.ers.usda.gov/data-products/food-access-research-atlas/">Food Access Research Data</a>, maps by Ryan Larson & Caglar Koylu.</p>
 				</div>
 				<div class='col-sm-8 mapButtons'>
 					<span class="pull-right">
@@ -82,12 +82,12 @@
 			<br />
 			<div class="row">
 				<div class="col-sm-6">
-					<span><p><h3 class='mapTitle'>Teen Birth Rate</h3>Births per 1,000 females ages 15-19.</p></span>
+					<span><p><h3 class='mapTitle'>Percent of Children Beyond 1/2 Mile</h3>Children (ages 0-17) population beyond 1/2 mile access to a supermarket.</p></span>
 					<div id="divMap1"></div>
 					<div id="divHist1"></div>
 				</div>
 				<div class="col-sm-6">
-					<h3 class='mapTitle'>Children in Poverty</h3><p>Percentage of children age 18 and under living in poverty.</p>
+					<h3 class='mapTitle'>Percent of White Population Beyond 1/2 Mile</h3><p>White population beyond 1/2 mile access to a supermarket.</p>
 					<div id="divMap2"></div>
 					<div id="divHist2"></div>
 				</div>
@@ -95,12 +95,12 @@
 
 			<div class="row">
 				<div class="col-sm-6">
-					<h3 class='mapTitle'>Low Birth Weight</h3><p>Percentage of births with low birthweight (<2500g).</p>
+					<h3 class='mapTitle'>Percent of Black Population Beyond 1/2 Mile</h3><p>Black population beyond 1/2 mile access to a supermarket.</p>
 					<div id="divMap3"></div>
 					<div id="divHist3"></div>
 				</div>
 				<div class="col-sm-6">
-					<h3 class='mapTitle'>Highschool Completion</h3><p>Percentage of adults age 25 and older with a high school diploma or equivalent.</p>
+					<h3 class='mapTitle'>Percent of Housing Units without Vehicle Access Beyond 1/2 Mile</h3><p>Housing units without vehicle accomodations beyond 1/2 mile access to a supermarket.</p>
 					<div id="divMap4"></div>
 					<div id="divHist4"></div>
 				</div>
@@ -139,10 +139,10 @@
 	// att1format: enter the d3.format string to display the variables in the format you like
 	// Check this link on how to specify the desired format:
 	// https://observablehq.com/@d3/d3-format
-	var att1 = 'lakidshalf', att1alias = 'Percent children beyond 1/2 mile', att1format = '.0f',
-	att2 = 'lawhitehalf', att2alias =  'Percent white population beyond 1/2 mile', att2format = '.0f',
-	att3 = 'lablackhalf', att3alias = 'Percent black population beyond 1/2 mile', att3format = '.0f',
-	att4 = 'lahunhalf', att4alias = 'Percent housing units without vehicle access', att4format = '.0f';
+	var att1 = 'lakidshalf', att1alias = 'Percent children', att1format = '.0f',
+	att2 = 'lawhitehalf', att2alias =  'Percent white population', att2format = '.0f',
+	att3 = 'lablackhalf', att3alias = 'Percent black population', att3format = '.0f',
+	att4 = 'lahunhalf', att4alias = 'Percent housing units', att4format = '.0f';
 
   // enter below all variables that should be recalculated. The order of attributes should match with
 	// the list of multiply and divide by values
