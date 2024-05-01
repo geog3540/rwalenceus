@@ -116,7 +116,7 @@
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////
 	// TODO: Change the variables below to customize the small multiples interface for your data
-	var polygonJSONFile = 'data/2023IAhealthdata.json'
+	var polygonJSONFile = 'data/Peoria.geojson'
 	// change the projection if needed *d3.geoAlbers()*
 	var projection = d3.geoAlbers();
 	var widthheightRatio = 0.4;
@@ -139,27 +139,27 @@
 	// att1format: enter the d3.format string to display the variables in the format you like
 	// Check this link on how to specify the desired format:
 	// https://observablehq.com/@d3/d3-format
-	var att1 = 'Teen_Birth', att1alias = 'Percent of Teen Births', att1format = '.0f',
-	att2 = '__Low_Birt', att2alias =  'Percent of Low Birth Weight', att2format = '.0f',
-	att3 = '__Children', att3alias = 'Percent Children in Poverty', att3format = '.0f',
-	att4 = '__Complete', att4alias = 'Percent with Highschool Completion', att4format = '.0f';
+	var att1 = 'lakidshalf', att1alias = 'Percent children beyond 1/2 mile', att1format = '.0f',
+	att2 = 'lawhitehalf', att2alias =  'Percent white population beyond 1/2 mile', att2format = '.0f',
+	att3 = 'lablackhalf', att3alias = 'Percent black population beyond 1/2 mile', att3format = '.0f',
+	att4 = 'lahunhalf', att4alias = 'Percent housing units without vehicle access', att4format = '.0f';
 
   // enter below all variables that should be recalculated. The order of attributes should match with
 	// the list of multiply and divide by values
-  // var attributesToBeNormalized = [att1, att4];
+   var attributesToBeNormalized = [att1, att2, attr3, attr4];
 	// If you would like to multiple the variables
 	// with a constant value enter them in multiplyBy array. If there is no need for multiplication,
 	// simply enter 1 for each value in multiplyBy.
-	// var multiplyBy = [10000, 100];
+	 var multiplyBy = [100, 100, 100, 100];
 	// Enter the attribute name that you want to normalize (divide by).
 	// If you want to only multiply an attribute but not divide by another attribute
 	// then simply put null as the attribute name in the same order of the attribute.
-	// var divideBy = ['Population', 'Population'];
+	 var divideBy = ['POP2010','POP2010','POP2010' 'OHU2010'];
 	// if your variables are not raw counts and they are already normalized, comment out above, and
 	//uncomment below:
-	var attributesToBeNormalized = [];
-	var multiplyBy = [];
-	var divideBy = [];
+	// var attributesToBeNormalized = [];
+	// var multiplyBy = [];
+	// var divideBy = [];
 
 	//DO NOT CHANGE ANYTHING BELOW THIS POINT UNLESS YOU KNOW WHAT YOU ARE DOING
 	////////////////////////////////////////////////////////////////////////////////////////////////
